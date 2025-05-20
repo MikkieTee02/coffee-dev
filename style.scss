@@ -1,0 +1,130 @@
+$primary-color: #F7F7F7;
+$secondary-color: #813A1A;
+
+body{
+    overflow-x: hidden;
+}
+
+.banner{
+    background-color: $primary-color;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    .nav-link{
+        color: $secondary-color;
+    }
+
+    h1{
+        color:#EDC588;
+        font-size: 200px;
+        text-transform:uppercase;
+        text-align: center;
+        position: absolute;
+        
+    }
+
+   .banner-design{
+        display: flex;
+        justify-content: center;
+      .milkshake{
+        position: absolute;
+      }
+   }
+
+   .sidetext-one{
+     margin-top: -500px;
+     margin-left: 30px;
+      h2{
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+
+      button{
+        background-color: $secondary-color;
+        color: $primary-color;
+        border-style: none;
+      }
+   }
+
+   .sidetext-two{
+     margin-top: 200px;
+     margin-left: 30px;
+      h2{
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+
+      button{
+        background-color: $secondary-color;
+        color: $primary-color;
+        border-style: none;
+      }
+   }
+
+   .hero-table{
+    height: 250px;
+    margin-left: auto;
+    margin-top: -200px;
+    padding: 0 0 0 0;
+    background-image: linear-gradient(to bottom, rgba(66, 23, 3, 0.603), rgba(59, 25, 9, 0.603)), 
+    url('img/coffee-bean-tea-espresso-coffee-cup.png');
+    background-size: cover;
+    background-position: center;
+
+    h2{
+        margin-left: 10px;
+        margin-bottom: 15px;
+        margin-top: 15px;
+        font-size: 20px;
+        color: $primary-color;
+    }
+
+    .form-area{
+        width: 160px;
+        height: 40px;
+        margin: 10 0 0 10;
+    }
+
+    .sign-up{
+        margin-left: 20px;
+        background-color: #EDC588;
+        color: $secondary-color;
+        font-weight: bold;
+        border-style: none;
+        border-radius: 2px;
+        width: 100px;
+    }
+
+    .login{
+        margin-left: 20px;
+        background-color: transparent;
+        color: $primary-color;
+        font-weight: bold;
+        border-radius: 2px;
+        border-color: #EDC588;
+        width: 100px;
+    }
+   }
+
+  
+}
+
+ .discover{
+      margin-left: 20px;
+      margin-top: 200px;
+    .left-discover{
+        background-image: url(img/coff.png);
+       background-position: center;
+       background-size: cover;
+       height: 90vh;
+       
+       
+       padding-top: 35px;
+      .since{
+        background-color: $primary-color;
+        width: 100px;
+        font-weight: bold;
+      }
+    }
+    
+   }
