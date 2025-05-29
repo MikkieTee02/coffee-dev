@@ -12,66 +12,108 @@
 
 <body>
 
+
+
     <section class="banner">
-        <nav>
+
+        <div class="nav navbar-expand-lg d-none d-lg-block">
             <div class="container-fluid">
-                <header class="d-flex flex-wrap justify-content-center py-2 "> <a href="/"
+                <header class="d-flex flex-wrap justify-content-center py-1 mb-0 "> <a href="/"
                         class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-                        <img src="img/banner logo.png" alt="logo" class="bi me-2" width="120" height="90"
-                            aria-hidden="true">
-
-                        </img> </a>
-
+                        <img src="img/logo-nobackground.png" alt="Bootstrap" width="160" height="80">
+                    </a>
                     <ul class="nav nav-pills">
-                        <li class="nav-item"><a href="#" class="nav-link " aria-current="page">Home</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link" aria-current="page">Home</a></li>
                         <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
                         <li class="nav-item"><a href="#" class="nav-link">Location</a></li>
                         <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
                         <li class="nav-item"><a href="#" class="nav-link">Delivery</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Contacts</a></li>
                         <li class="nav-item"><a href="#" class="nav-link"><img src="img/bi_cart-check-fill.png"
                                     alt=""></a></li>
                         <li class="nav-item"><a href="#" class="nav-link"><img src="img/subway_sms-8.png" alt=""></a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                <img src="img/hamburger.png" alt="dropdown-menu">
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Home</a></li>
-                                <li><a class="dropdown-item" href="#">About</a></li>
-                                <li><a class="dropdown-item" href="#">Location</a></li>
-                                <li><a class="dropdown-item" href="#">Services</a></li>
-                                <li><a class="dropdown-item" href="#">Delivery</a></li>
-                                <li><a class="dropdown-item" href="#">Contact</a></li>
-                            </ul>
-                        </li>
                     </ul>
                 </header>
             </div>
+        </div>
+
+        <nav class="navbar bg-body-tertiary text-center d-lg-none ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="img/logo-nobackground.png" alt="" width="90px"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <img src="img/hamburger.png" alt="">
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" style="background-color: #edc688;"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body ">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Pricing</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Location</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Delivery</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Contacts</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </nav>
 
-        <div class=" banner-design ">
-            <h1>Coffee</h1>
-            <img src="img/coffee-milkshake-bubble-tea-juice-coffee-tea-5dd2da970e58709d1f708f94a68d392c 1.png" alt=""
-                width="500px" class=" milkshake">
-            <img src="img/coffee-bean-scattered-coffee-beans-866180011e0ff84f6d3aee53671b1324 1.png" alt=""
-                class="beans">
+
+
+        <div class="coffee-design">
+            <h1 class="text-center">Coffee</h1>
+            <div class="coffee-beans">
+                <img src="img/coffee-bean-scattered-coffee-beans-866180011e0ff84f6d3aee53671b1324 1.png" alt="">
+            </div>
+
+            <div class="coffee-shake">
+                <img src="img/coffee-milkshake-bubble-tea-juice-coffee-tea-5dd2da970e58709d1f708f94a68d392c 1.png"
+                    alt="">
+            </div>
         </div>
 
-        <div class="sidetext-one col-md-2">
-            <h2> Never Underestimate The Power of a good Cup of Coffee</h2>
-            <button>Order Now</button>
+        <div class="hero-text">
+            <div class="col-md-4">
+                <h2> Never Underestimate <br>The Power of a Good Cup Of Coffee</h2>
+                <button>Order Now</button>
+            </div>
+
         </div>
 
-        <div class="sidetext-two col-md-2">
-            <h2>Joy Coffee</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic nemo distinctio suscipit magni, repellat
-                quia?</p>
+
+
+    </section>
+
+    <section class="form-table container-fluid">
+        <div class="joy-coffeetext">
+            <h2> Joy Coffee</h2>
+            <p class="col-md-4">We are delighted in serving you the best coffee of all time with enriched flavours
+                extracted from the
+                natural coffee bean around the world</p>
             <button>Read More</button>
         </div>
-
         <div class="col-md-4 hero-table">
             <h2>Book Your Table</h2>
             <form action="submit">
@@ -79,65 +121,432 @@
                 <input type="text" placeholder="Surname" class="form-area">
                 <input type="email" placeholder="Email" class="form-area">
                 <input type="datetime" placeholder="Dates" class="form-area">
-                <h2>Login And Sign Up For Delivery</h2>
+                <h2>Login And Sign Up <br>For Delivery</h2>
                 <button class="Sign-up"> Sign Up</button>
                 <button class="Login">Login</button>
             </form>
 
         </div>
-
     </section>
 
     <section class=" discover">
-
-        <div class="row">
-            <div class="col-md-6">
-            <div class="left-discover">
-                <p class="since">Since 2011</p>
-            </div>
-
-        </div>
-
-        <div class="col-md-4">
-            <h2 class="mt-4">Discover The Taste of Real Coffee</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione voluptas asperiores reiciendis,
-            provident accusantium minus eveniet est dicta soluta atque? Illum quos impedit hic illo commodi
-            accusantium rerum, assumenda inventore.</p>
-
-            <button> Read More</button>
-
-            <h2 class="text-center">Cups Served</h2>
-
-            <div class="container">
-               <div class="row">
+        <div class="container-fluid p-0 ">
+            <div class="row g-0 ">
                 <div class="col-md-6">
-                   <div class="discover-online">
-                     <img src="img/ic_outline-book-online.png" alt="">
-                      <p> Online Orders <br><span>300+</span></p>
-                  </div>
-                </div>
-            
-                  <div class="col-md-6">
-                   <div class="discover-outdoor">
-                     <img src="img/ic_outline-outdoor-grill.png" alt="">
-                      <p> Outdoor events <br><span>2 200+</span></p>
-                  </div>
+                    <div class="left-discover">
+                        <p class="since">Since 2011</p>
+                    </div>
+
                 </div>
 
-               </div>
+                <div class="discover-right col-md-4">
+                    <h2 class="mt-4">Discover The Taste of Real Coffee</h2>
+                    <p>The craft of coffee making runs in our
+                        cores. At Joy Coffee care deeply about the
+                        quality and taste of each cup. We are proud to
+                        be involved in the whole coffee making
+                        .For each year we send great researchers all
+                        around the world to find you the best coffee
+                        manufacturing companies and bringing out the
+                        unique flavors and aromas. We can’t wait to
+                        welcome you for a comforting
+                        cup of coffee.</p>
+
+                    <button> Read More</button>
+
+                    <h2 class="text-center pb-5">Cups Served</h2>
+
+                    <div class="container text-center">
+                        <div class="row  ">
+                            <div class="col-md-6">
+                                <div class="discover-online">
+                                    <img src="img/ic_outline-book-online.png" alt="" height="90px">
+                                    <p> Online Orders <br><span>300+</span></p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="discover-outdoor">
+                                    <img src="img/ic_outline-outdoor-grill.png" alt="" height="90px">
+                                    <p> Outdoor events <br><span>2 200+</span></p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
             </div>
-             
-            
-
-
-             
-
-
         </div>
-        </div>
-       
+
+
+
 
     </section>
+
+    <section class="icons">
+        <div class="container mt-4 text-center">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="inner-icon">
+                        <img src="img/recipe.png" alt="">
+                        <h2>Recipes</h2>
+                        <p>Learn more about our recipes and create your own coffee with Joy</p>
+                        <button>Read More</button>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="inner-icon2">
+                        <img src="img/flavours icon.png" alt="">
+                        <h2>Flavours</h2>
+                        <p>Learn more about our Flavours </p>
+                        <button>Read More</button>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="inner-icon3">
+                        <img src="img/products icons.png" alt="">
+                        <h2>Products</h2>
+                        <p>Learn more about our products that are ready for you </p>
+                        <button>Read More</button>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </section>
+
+    <section class="Services">
+        <h2 class=" text-center">Services We Offer</h2>
+        <h2 class=" text-center">We provide catering for corporate functions <br>also we work with hotels and business
+            organizations</h2>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="service-inner">
+                        <h3>Business functions</h3>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="service-inner2">
+                        <h3>Hotel functions</h3>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="service-inner3">
+                        <h3>Indoor functions</h3>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="Our-team">
+        <h2 class=" text-center">Our Team</h2>
+        <h2 class=" text-center">Individual commitment to a group effort-that is <br>what makes a team work, a company
+            work, a <br>society work,a civilisation work</h2>
+        <div class="container-fluid">
+            <div class="row g-0">
+                <div class="col-md-6">
+                    <div class="team-inner">
+                        <h3>Catering Team</h3>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+
+                    <div class="team-inner1">
+                        <h3>Manager Team</h3>
+                    </div>
+
+                    <div class="team-inner2">
+                        <h3>Media Team</h3>
+                    </div>
+
+                    <div class="team-inner3">
+                        <h3>Reasearch Team</h3>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="Partnered-products">
+        <h2 class=" text-center">Partnered Products</h2>
+        <h2 class=" text-center">We partnered with the best and trusted products to <br> continue serving you with joy and
+            providing you with elite services.</h2>
+        <div class="container-fluid">
+            <div class="row d-flex justify-content-center g-0 ">
+                <div class="col-md-6 col-lg-3 ">
+                    <div class="card-inner">
+                        <div class="card border-0" style="width: 18rem;">
+                            <img src="img/cremora.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Cremora Milk</h5>
+                                <p class="card-text">Milk Powder</p>
+                                <a href="#" class="card-link">www.cremora.co.za</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3  ">
+                    <div class="card-inner2">
+                        <div class="card border-0" style="width: 18rem;">
+                            <img src="img/nescafe.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Nescafe Coffee</h5>
+                                <p class="card-text">Coffee Classic</p>
+                                <a href="#" class="card-link">www.nescafe.co.za</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3  ">
+                    <div class="card-inner3">
+                        <div class="card border-0 " style="width: 18rem;">
+                            <img src="img/jacobs.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Jacobs Coffee</h5>
+                                <p class="card-text">Kronugg Coffee</p>
+                                <a href="#" class="card-link">www.jacobs.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3  ">
+                    <div class="card-inner4">
+                        <div class="card border-0" style="width: 18rem;">
+                            <img src="img/dendairy.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Dendairy</h5>
+                                <p class="card-text">Fresh Milk</p>
+                                <a href="#" class="card-link">www.dendairy.co.zw</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Testimonials section-->
+    <section class="testimonials">
+        <h2 class=" text-center">Testimonials</h2>
+        <h2 class=" text-center">You can hear from our beloved <br> clients <br>that always keeps us moving forward</h2>
+        <div class="container-fluid p-0">
+            <div class="row g-0 ">
+                <div class="col-md-6">
+                    <div class="inner-testimony">
+                        <img src="img/testimony 1.png" alt="" width="100%" class="img-fluid">
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="inner-testimony2">
+                        <h3 class="text-center">Matt Maguire</h3>
+                        <p class="text-center">The team I think I did an excellent job. They were very good at
+                            communicating clearly with me online. Were very fair with his work. While I am an expert it
+                            looks like everything was done correctly. I would work with them again without hesitation
+                        </p>
+
+                        <div class="testimony-icons">
+                            <div class="twitter">
+                                <img src="img/twitter icon.png" alt="">
+                            </div>
+                            <div class="facebook">
+                                <img src="img/facebook icon.png" alt="">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="inner-testimony3">
+                        <img src="img/model.png" alt="" class="img-fluid">
+                    </div>
+
+                </div>
+
+                <div class="col-md-3">
+                    <div class="inner-testimony4">
+                        <h3 class="text-center">Bondile Moyo</h3>
+                        <p class="text-center">You can hear from our beloved clients <br> that always keeps us moving
+                            forward</p>
+                        <div class="testimony-icons">
+                            <div class="twitter">
+                                <img src="img/twitter icon.png" alt="">
+                            </div>
+                            <div class="facebook">
+                                <img src="img/facebook icon.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-md-3">
+                    <div class="inner-testimony5">
+                        <img src="img/proffesional lady.png" alt="" class="img-fluid">
+                    </div>
+
+                </div>
+
+                <div class="col-md-3">
+                    <div class="inner-testimony6">
+                        <h3 class="text-center">Noreen Nleya</h3>
+                        <p class="text-center">You can hear from our beloved clients that always keeps us moving</p>
+                        <div class="testimony-icons">
+                            <div class="twitter">
+                                <img src="img/twitter icon.png" alt="">
+                            </div>
+                            <div class="facebook">
+                                <img src="img/facebook icon.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-md-3">
+                    <div class="inner-testimony7">
+                        <h3 class="text-center">Arnold Nzira</h3>
+                        <p class="text-center">You can hear from our beloved clients that always keeps us moving</p>
+                        <div class="testimony-icons">
+                            <div class="twitter">
+                                <img src="img/twitter icon.png" alt="">
+                            </div>
+                            <div class="facebook">
+                                <img src="img/facebook icon.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-md-3">
+                    <div class="inner-testimony8">
+                        <img src="img/young man.png" alt="" class="img-fluid">
+                    </div>
+
+                </div>
+
+                <div class="col-md-3">
+                    <div class="inner-testimony9">
+                        <h3 class="text-center">Shalom Gela</h3>
+                        <p class="text-center">You can hear from our beloved clients that always keeps us moving</p>
+                        <div class="testimony-icons">
+                            <div class="twitter">
+                                <img src="img/twitter icon.png" alt="">
+                            </div>
+                            <div class="facebook">
+                                <img src="img/facebook icon.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-md-3">
+                    <div class="inner-testimony10">
+                        <img src="img/proffesional man.png" alt="" class="img-fluid">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class=" view-button d-flex justify-content-center">
+            <button class=" d-block d-md-none my-3 d-block d-sm-none ">View Testimonies</button>
+        </div>
+
+    </section>
+
+
+    <footer>
+        <div class="container-fluid p-0">
+            <div class="row g-0 ">
+                <div class=" col-md-6 col-lg-3">
+                    <div class="inner-footer">
+                        <div class="logo-text d-flex">
+                            <a href="#"><img src="img/joy logo.png" alt="" width="100px"></a>
+                            <p>Taste The Real Coffee</p>
+                        </div>
+                        <h3>+263 785 626016</h3>
+                        <p class="joy-description">24/7 Coffee Service <br> <span>You can call anytime we always ready
+                                for your call</span> </p>
+                    </div>
+                </div>
+
+                <div class=" col-md-6 col-lg-3">
+                    <div class="inner-footer2">
+                        <h3>Newsletter</h3>
+                        <p>Subscribe to our newsletter and get latest news and exclusive letters straight to your inbox
+                        </p>
+
+                        <!--<form action="submit">
+                            <input type="email" placeholder="Subscribe" class="Subscribe-text">
+                            <button type="submit">GO</button>
+                        </form>-->
+
+                        <div class="Subscribe-text">
+                            <p>Subsribe </p>
+                            <button>GO</button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class=" col-md-6 col-lg-3">
+                    <div class="inner-footer3">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Shop</a></li>
+                            <li><a href="#">Delivery</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Location</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class=" col-md-6 col-lg-3">
+                    <div class="inner-footer4">
+                        <h3>Social</h3>
+                        <div class="footer-icons">
+                            <div class="footer-icon1">
+                                <a href="#"><img src="img/twitter footer.png" alt="twitter-icon"> </a>
+                            </div>
+                            <div class="footer-icon2">
+                                <a href="#"> <img src="img/ant-design_instagram-filled.png" alt="instagram-icon"></a>
+                            </div>
+                            <div class="footer-icon3">
+                                <a href="#"> <img src="img/dashicons_whatsapp.png" alt="whatsapp-icon"> </a>
+                            </div>
+                            <div class="footer-icon4">
+                                <a href="#"> <img src="img/facebook footer.png" alt=""> </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
 

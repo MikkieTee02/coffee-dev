@@ -1,72 +1,127 @@
 $primary-color: #F7F7F7;
-$secondary-color: #813A1A;
+$secondary-color:#3F2318;
+ /*@font-face {
+  font-family: 'Gotham';
+  src: url('Gotham/Gotham-Light.otf') format('otf');
+    font-weight: 400px;
+  
+}*/
+
+
+@import url(' <link rel="https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/gotham.css">');
+
 
 body{
     overflow-x: hidden;
+     font-family: 'Gotham', sans-serif ;
 }
 
 .banner{
-    background-color: $primary-color;
-    height: 100vh;
-    width: 100%;
+  background-color: $primary-color;
+   height: 100vh;
+
+  .nav-link{
+    color: $secondary-color;
+  }
+
+  .coffee-design{
     position: relative;
-    .nav-link{
-        color: $secondary-color;
+     h1{
+    color:#EDC588;
+    font-size: 260px;
+     text-transform: uppercase;
+     //position: absolute;
+  }
+
+  .coffee-beans{
+    img{
+      width: 730px;
+    }
+     position: absolute;
+     left: 20%;
+      top: -30px;
+      
+  }
+
+  .coffee-shake{
+    img{
+      height: 600px;
+    }
+    
+    position: absolute;
+    top: -30px;
+    left: 27%;
+  }
+    
+  }
+
+  .hero-text{
+    margin-left: 25px;
+    h2{
+      font-size: 30px;
+      color: $secondary-color;
+      font-weight: bold;
     }
 
-    h1{
-        color:#EDC588;
-        font-size: 200px;
-        text-transform:uppercase;
-        text-align: center;
-        position: absolute;
-        
+    button{
+      background-color:#813A1A;
+      color: $primary-color;
+      width: 150px;
+      height: 40px;
+      font-size: 18px;
+      border-style: none;
+      border-radius: 2px;
+    }
+  }
+  
+
+  
+
+  
+}
+
+
+.form-table{
+  background-color: $primary-color;
+
+  .joy-coffeetext{
+    margin-left: 25px;
+    //padding-bottom: 50px;
+    padding-top: 50px;
+  
+    h2{
+      color: $secondary-color;
+      font-size: 30px;
+      font-weight: bold;
     }
 
-   .banner-design{
-        display: flex;
-        justify-content: center;
-      .milkshake{
-        position: absolute;
-      }
-   }
+    p{
+      font-size: 22px;
+    }
 
-   .sidetext-one{
-     margin-top: -500px;
-     margin-left: 30px;
-      h2{
-        font-size: 20px;
-        margin-bottom: 20px;
-      }
-
-      button{
-        background-color: $secondary-color;
-        color: $primary-color;
-        border-style: none;
-      }
-   }
-
-   .sidetext-two{
-     margin-top: 200px;
-     margin-left: 30px;
-      h2{
-        font-size: 20px;
-        margin-bottom: 20px;
-      }
-
-      button{
-        background-color: $secondary-color;
-        color: $primary-color;
-        border-style: none;
-      }
-   }
-
-   .hero-table{
-    height: 250px;
+    button{
+      background-color:#813A1A;
+      color: $primary-color;
+      width: 150px;
+      height: 40px;
+      font-size: 18px;
+      border-style: none;
+      border-radius: 2px;
+    }
+  }
+  .hero-table{
+     /*position: absolute;
+     left: 60%;
+     bottom: -250px;*/
+    
+    //width: 400px;
+    border-radius: 5px;
+    margin-top: -340px;
+    margin-bottom: 50px;
     margin-left: auto;
-    margin-top: -200px;
-    padding: 0 0 0 0;
-    background-image: linear-gradient(to bottom, rgba(66, 23, 3, 0.603), rgba(59, 25, 9, 0.603)), 
+    margin-right: 50px;
+    padding: 10px 0 25px 0;
+    background-image: linear-gradient(to bottom, rgba(66, 23, 3, 0.87), rgba(59, 25, 9, 0.829)), 
     url('img/coffee-bean-tea-espresso-coffee-cup.png');
     background-size: cover;
     background-position: center;
@@ -75,56 +130,1423 @@ body{
         margin-left: 10px;
         margin-bottom: 15px;
         margin-top: 15px;
-        font-size: 20px;
+        font-size: 25px;
         color: $primary-color;
+        font-weight: bold;
     }
 
     .form-area{
-        width: 160px;
+        width: 180px;
         height: 40px;
         margin: 10 0 0 10;
+       
     }
 
     .sign-up{
         margin-left: 20px;
         background-color: #EDC588;
         color: $secondary-color;
+        font-size: 25px;
         font-weight: bold;
         border-style: none;
         border-radius: 2px;
-        width: 100px;
+        width: 150px;
     }
 
     .login{
         margin-left: 20px;
+        border-style: none;
+        border: 1px solid #EDC588;
         background-color: transparent;
         color: $primary-color;
         font-weight: bold;
         border-radius: 2px;
         border-color: #EDC588;
-        width: 100px;
+        width: 150px;
+        font-size: 25px;
     }
    }
-
-  
 }
 
+
+
+
  .discover{
-      margin-left: 20px;
-      margin-top: 200px;
+  background-color: $primary-color;
+      //margin-left: 20px;
+
+      p{
+        font-size: 20px;
+      }
     .left-discover{
         background-image: url(img/coff.png);
        background-position: center;
        background-size: cover;
        height: 90vh;
-       
-       
-       padding-top: 35px;
+       margin-bottom: 20px;
+        padding-top: 35px;
+        margin-left: 15px;
       .since{
         background-color: $primary-color;
-        width: 100px;
+        width: 130px;
         font-weight: bold;
       }
     }
     
+    .discover-right{
+      padding-left: 20px;
+       h2{
+        margin-left: 10px;
+        margin-bottom: 15px;
+        margin-top: 15px;
+        font-size: 25px;
+        color: $secondary-color;
+        font-weight: bold;
+       }
+
+       button{
+        background-color:#813A1A;
+      color: $primary-color;
+      width: 150px;
+      height: 40px;
+      font-size: 18px;
+      border-style: none;
+      border-radius: 2px;
+       }
+
+       .discover-online, .discover-outdoor {
+       p {
+          span{
+            font-size: 30px;
+            font-weight: bold;
+          }
+        }
+       }
+    }
    }
+
+  .icons{
+    background-color: $primary-color;
+    padding-top: 40px;
+   
+
+    
+    .inner-icon, .inner-icon2, .inner-icon3{
+      
+      h2{
+        margin-top: 20px;
+        font-size: 25px;
+        color: $secondary-color;
+        font-weight: bold;
+      }
+
+      P{
+      font-size: 20px;
+    }
+    
+
+    
+
+      button{
+        
+      background-color:#813A1A;
+      color: $primary-color;
+      width: 150px;
+      height: 40px;
+      font-size: 18px;
+      border-style: none;
+      border-radius: 2px;
+      margin-bottom: 20px;
+      //margin-top: auto;
+      }
+    }
+
+    
+   
+   .inner-icon2 > button{
+    margin-top: 30px;
+   }
+  }
+
+.Services{
+  margin-top: 30px;
+  h2{
+    font-size: 25px;
+    color: $secondary-color;
+    margin-bottom: 30px;
+    font-weight: bold;
+  }
+  
+  .container-fluid{
+    background-color: $primary-color;
+    padding: 30px 20px 30px 20px;
+    .row{
+      
+      .service-inner{
+        background-image: url(img/services\ 1.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 50vh;
+        display: flex;
+        align-items: end;
+        justify-content: center;
+      }
+
+      .service-inner2{
+        background-image: url(img/services\ 2.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 50vh;
+        display: flex;
+        align-items: end;
+        justify-content: center;
+      } 
+
+
+      .service-inner3{
+        background-image: url(img/services\ 3.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 50vh;
+        display: flex;
+        align-items: end;
+        justify-content: center;
+      } 
+
+      h3{
+        background-color: #f7f7f7a2;
+        color: $secondary-color;
+        font-size: 25px;
+        text-align: center;
+        margin: 0 10px 10px 10px;
+        padding: 15px;
+      }
+    }
+  }
+  
+}
+
+.Our-team{
+  margin-top: 30px;
+  h2{
+    font-size: 25px;
+    color: $secondary-color;
+    margin-bottom: 30px;
+    font-weight: bold;
+  }
+
+  .container-fluid{
+
+    //height: 200px;
+    .row{
+      
+      .team-inner{
+        background-image: linear-gradient(rgba(128, 65, 36, 0.418), rgba(128, 65, 36, 0.418)), url(img/catering\ team.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        //height: 105vh;
+        height: 830px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .team-inner1{
+         background-image: url(img/manager\ team.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+       .team-inner2{
+         background-image: url(img/media.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 265px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+       .team-inner3{
+         background-image: url(img/researcg\ team.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 265px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+       h3{
+        background-color: #f7f7f7a2;
+        color: $secondary-color;
+        font-size: 25px;
+        text-align: center;
+        margin: 0 10px 10px 10px;
+        padding: 15px;
+      }
+    }
+  }
+}
+
+.Partnered-products{
+  margin-top: 30px;
+  
+  h2{
+    font-size: 25px;
+    color: $secondary-color;
+    margin-bottom: 30px;
+    font-weight: bold;
+    
+  }
+
+  .container-fluid{
+    background-color: $primary-color;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
+    .card-inner, .card-inner2, .card-inner3,.card-inner4{
+      .card-body{
+        color: $secondary-color;
+      }
+      a{
+        text-decoration: none;
+        color: $secondary-color;
+      }
+    }
+  }
+}
+
+.testimonials{
+  margin-top: 30px;
+  h2{
+    font-size: 25px;
+    color: $secondary-color;
+    margin-bottom: 30px;
+    font-weight: bold;
+  }
+
+  .container-fluid{
+    background-image: url(img/coff.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    //opacity: 0.3;
+    //z-index: 1;
+
+    .testimony-icons{
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        padding-top: 25px;
+       border-top: #3a3a3aa2 solid;
+       
+      }
+
+       p{
+        color: $secondary-color;
+        font-size: 20px;
+        margin: 20px 0 20px 0;
+      }
+
+    .inner-testimony{
+      background: linear-gradient( to bottom, rgba(129, 58, 26, 0.45), rgba(129, 58, 26, 0.45));
+      
+    }
+
+    .inner-testimony2{
+      //margin: 18% 10% 18% 10%;
+      padding: 10% 10% 10% 10%;
+      background-color: #f7f7f760;
+       width: 100%;
+       height: 100%;
+      
+
+    }
+
+    .inner-testimony4, .inner-testimony6, .inner-testimony7, .inner-testimony9{
+      padding: 20px 10px 20px 10px;
+      background-color: #edc588bd;
+      height: 100%;
+      
+    }
+  }
+
+  .view-button{
+    button{
+       background-color:#813A1A;
+      color: $primary-color;
+      width: 170px;
+      height: 40px;
+      font-size: 18px;
+      border-style: none;
+      border-radius: 2px;
+      margin-bottom: 20px;
+      //margin-top: auto;
+      
+    }
+  }
+}
+
+footer{
+  margin-top: 80px;
+  
+  background: linear-gradient(rgba(129, 58, 26, 0.6), rgba(129, 58, 26, 0.7)), url("img/footer-background.png");
+ background-position: center;
+ background-size: cover;
+ background-repeat: no-repeat;
+
+  padding-right: 20px;
+ 
+ .inner-footer{
+  color: #813A1A;
+   background-color: #EDC588;
+  height: 100%;
+   width: 100%;
+   padding-top: 20px;
+   padding-left: 20px;
+   
+   .logo-text{
+     font-size: 23px;
+     padding-bottom: 30px;
+     padding-left: 20px;
+   }
+
+   h3{
+    font-weight: bold;
+    padding-bottom: 20px;
+   }
+
+   .joy-description{
+    font-weight: bold;
+    font-size: 20px;
+    width: 70%;
+    padding-bottom: 20px;
+    span{
+      font-weight:600;
+      
+    }
+   }
+ }
+
+ .inner-footer2{
+    padding-top: 20px;
+    padding-left: 20px;
+   h3{
+    color: $primary-color;
+   }
+
+   p{
+    color: $primary-color;
+    font-size: 20px;
+    padding-bottom: 60px;
+   }
+
+   .Subscribe-text{
+      border-style: none;
+      background-color: #EDC588;
+      height: 40px;
+      width: 300px;
+      border-radius: 2px;
+      display: flex;
+      padding-left: 20px;
+
+      p{
+        color: #813A1A;
+      }
+      button{
+      color: $primary-color;
+      border-style: none;
+      width: 100px;
+      height: 30px;
+      background-color: #813A1A;
+      font-weight: bold;
+      margin-left: 100px;
+      margin-top: 5px;
+    }
+    }
+
+   
+ }
+
+ .inner-footer3{
+    padding-top: 20px;
+    padding-left: 20px;
+     text-align: center;
+    h3{
+      color: $primary-color;
+    }
+
+    ul{
+
+      li{
+        list-style: none;
+        padding-bottom: 10px;
+        font-size: 20px;
+        a{
+          color: $primary-color;
+          text-decoration: none;
+        }
+      }
+    }
+ }
+
+ .inner-footer4{
+   padding-top: 20px;
+    padding-left: 20px;
+    
+    h3{
+      color: $primary-color;
+      text-align: center;
+      padding-bottom: 40px;
+    }
+
+    .footer-icons{
+      
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-wrap: wrap;
+       gap: 40px;
+       width: 200px;
+       margin-left: 60px;
+       padding-bottom: 80px;
+    }
+ }
+
+ 
+}
+
+//Media query
+
+//for desktop
+@media (max-width: 1200px){
+  .banner{
+  .coffee-design{
+    position: relative;
+     h1{
+    color:#EDC588;
+    font-size: 200px;
+   
+   
+  }
+
+  .coffee-beans{
+    img{
+      width: 600px;
+    }
+     position: absolute;
+     left: 17%;
+      top: -30px;
+      
+  }
+
+  .coffee-shake{
+    img{
+      height: 550px;
+      //box-shadow: #EDC588;
+    }
+    
+    position: absolute;
+    top: -30px;
+    left: 24%;
+  }
+    
+  } 
+
+  
+}
+
+//partnered products
+ .Partnered-products{
+  margin-top: 30px;
+
+
+  .container-fluid{
+    
+    .card-inner, .card-inner2, .card-inner3,.card-inner4{
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      .card{
+        
+
+         .card-body{
+        color: $secondary-color;
+      }
+      a{
+        text-decoration: none;
+        color: $secondary-color;
+      }
+      }
+     
+    }
+  }
+}
+
+//Testimonials
+.testimonials{
+  margin-top: 30px;
+  h2{
+    font-size: 25px;
+    color: $secondary-color;
+    margin-bottom: 30px;
+  }
+
+  .container-fluid{
+    background-image: url(img/coff.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    //opacity: 0.3;
+    //z-index: 1;
+
+
+       p{
+        color: $secondary-color;
+        font-size: 20px;
+        margin: 20px 0 20px 0;
+      }
+
+
+   .inner-testimony,.inner-testimony3, .inner-testimony5, .inner-testimony8, .inner-testimony10{
+      img{
+        height: 100%;
+        object-fit: cover;
+      }
+     
+      
+     
+    }
+  }
+}
+}
+
+//for tablet and below
+@media  (max-width: 768px){
+
+  //banner
+ .banner{
+  background-color: $primary-color;
+   height: 100vh;
+
+ 
+  .coffee-design{
+    position: relative;
+     h1{
+    color:#EDC588;
+    font-size: 120px;
+   
+  }
+
+  .coffee-beans{
+    img{
+      width: 530px;
+    }
+     position: absolute;
+     left: 10%;
+      top: -23px;
+      
+  }
+
+  .coffee-shake{
+    img{
+      height: 500px;
+    }
+    
+    position: absolute;
+    top: -30px;
+    left: 20%;
+  }
+    
+  }
+
+  .hero-text{
+     text-align: center;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     padding-top: 280px;
+     //width: 100%;
+     text-align: center;
+     //height: 20%;
+      
+    
+    h2{
+      font-size: 25px;
+    }
+
+    button{
+      background-color:#813A1A;
+      
+    }
+  }
+}
+
+//form table
+
+.form-table{
+  background-color: $primary-color;
+
+  
+   .joy-coffeetext{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    //margin-left: 0px;
+    //width: 100%;
+     padding-left: 0px;
+     padding-right: 0px;
+    padding-top: 150px;
+    //margin-top: 20px;
+  
+    h2{
+      color: $secondary-color;
+      font-size: 25px;
+    }
+
+    p{
+      font-size: 20px;
+    }
+
+    
+  }
+  
+  .hero-table{
+   
+    
+    width: 100%;
+    
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: 0px;
+    padding: 10px 0 25px 0;
+    
+
+    h2{
+    
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .form-area{
+        width: 90%;
+        height: 40px;
+        margin: 10 0 0 10;
+       
+    }
+
+    .sign-up{
+        margin-left: 20px;
+        border-radius: 4px;
+        font-size: 20px;
+        width: 90%;
+        
+    }
+
+    .login{
+        margin-left: 20px;
+        margin-top: 10px;
+        width: 90%;
+        font-size: 20px;
+    }
+   }
+}
+
+//discover
+
+.discover{
+
+      p{
+        font-size: 20px;
+      }
+    .left-discover{
+      background-image: url(img/coff.png);
+       background-position: center;
+       background-size: cover;
+       height: 100vh;
+       margin-bottom: 20px;
+       padding-top: 35px;
+        margin-left: 15px;
+        width: 550px;
+  
+    }
+    
+    .discover-right{
+      padding-left: 20px;
+      width: 100%;
+       h2{
+        
+        font-size: 25px;
+       
+       }
+       .discover-online, .discover-outdoor {
+       p {
+          span{
+            font-size: 30px;
+            font-weight: bold;
+          }
+        }
+       }
+    }
+   }
+
+   //services
+
+   .Services{
+  h2{
+    font-size: 25px;
+    color: $secondary-color;
+    margin-bottom: 30px;
+  }
+  
+  .container-fluid{
+  
+    .row{
+      //gap: 5px;
+     
+
+      h3{
+        font-size: 21px;
+      }
+    }
+  }
+  
+}
+
+//partnered products
+.Partnered-products{
+  margin-top: 30px;
+  
+  h2{
+    font-size: 25px;
+   
+  }
+
+  .container-fluid{
+   
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 60px;
+    
+     .row{
+       gap: 0px;
+       
+      //gap: 10px;
+      .card-inner, .card-inner2, .card-inner3,.card-inner4{
+        padding-top: 30px;
+      .card-body{
+        color: $secondary-color;
+      }
+    }
+     }
+    
+   
+  }
+}
+
+//testimonials
+ 
+  .testimonials{
+  margin-top: 30px;
+  h2{
+    font-size: 25px;
+    color: $secondary-color;
+    margin-bottom: 30px;
+  }
+
+  .container-fluid{
+    background-image: url(img/coff.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    //opacity: 0.3;
+    //z-index: 1;
+
+    .testimony-icons{
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        padding-top: 25px;
+       border-top: #3a3a3aa2 solid;
+       
+      }
+
+       p{
+        color: $secondary-color;
+        font-size: 20px;
+        margin: 20px 0 20px 0;
+      }
+
+    .inner-testimony{
+      background: linear-gradient( to bottom, rgba(129, 58, 26, 0.45), rgba(129, 58, 26, 0.45));
+      
+    }
+
+    .inner-testimony2{
+      //margin: 18% 10% 18% 10%;
+      padding: 10% 10% 10% 10%;
+      background-color: #f7f7f760;
+       width: 100%;
+       height: 100%;
+      
+
+    }
+
+    .inner-testimony,.inner-testimony3, .inner-testimony5, .inner-testimony8, .inner-testimony10{
+      img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+     
+      
+     
+    }
+  }
+}
+}
+
+
+//for phone
+
+@media  (max-width: 576px) {
+  .banner{
+  
+   height: 100vh;
+
+  .coffee-design{
+    position: relative;
+     h1{
+      
+      margin-top: 20px;
+    font-size: 80px;
+    text-align: center;
+   
+  }
+
+  .coffee-beans{
+
+    img{
+      width: 338px;
+    }
+    
+     position: absolute;
+     left: 8%;
+      top: 30px;
+  }
+
+  .coffee-shake{
+     img{
+      //width: 270.01px;
+      height: 350.93px;
+     }
+    position: absolute;
+    top: -30px;
+    left: 10%;
+  }
+    
+  }
+
+  .hero-text{
+     text-align: center;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     padding-top: 250px;
+     text-align: center;
+     height: 20%;
+     
+      
+    
+    h2{
+      font-size: 20px;
+      padding-left: 10px;
+     padding-right: 10px;
+    }
+
+    button{
+      background-color:#813A1A;
+      
+    }
+  }
+}
+
+//form table
+.form-table{
+ 
+
+  .joy-coffeetext{
+    text-align: center;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+    margin-left: 0px;
+     padding-left: 30px;
+     padding-right: 30px;
+    padding-top: 50px;
+  
+    h2{
+      color: $secondary-color;
+      font-size: 20px;
+    }
+
+    p{
+      font-size: 18px;
+    }
+
+    button{
+      background-color: #813A1A;
+  
+    }
+  }
+  .hero-table{
+   
+    
+    //width: 400px;
+    
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: 0px;
+    padding: 10px 0 25px 0;
+    
+
+    h2{
+    
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .form-area{
+        width: 90%;
+        height: 40px;
+        margin: 10 0 0 10;
+       
+    }
+
+    .sign-up{
+        margin-left: 20px;
+        border-radius: 4px;
+        font-size: 20px;
+        width: 90%;
+        
+    }
+
+    .login{
+        margin-left: 20px;
+        margin-top: 10px;
+        width: 90%;
+        font-size: 20px;
+    }
+   }
+}
+
+//discover
+
+ .discover{
+  background-color: $primary-color;
+      //margin-left: 20px;
+
+      p{
+        font-size: 18px;
+        text-align:center ;
+      }
+    .left-discover{
+       
+       height: 70vh;
+       margin-bottom: 20px;
+        padding-top: 35px;
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 90%;
+     
+    }
+    
+    .discover-right{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding-left: 20px;
+      padding-right: 20px;
+       h2{
+        margin-left: 10px;
+        margin-bottom: 15px;
+        margin-top: 15px;
+        font-size: 20px;
+        
+       }
+
+       button{
+    
+      font-size: 18px;
+       }
+
+    }
+   }
+
+
+   //icons
+
+ .icons{
+
+    P{
+      font-size: 18px;
+    }
+    
+    .inner-icon, .inner-icon2, .inner-icon3{
+      h2{
+        font-size: 20px;
+      }
+
+      button{
+      font-size: 18px;
+      margin-bottom: 40px;
+      }
+    }
+  }
+
+
+  //Services
+
+  .Services{
+  margin-top: 30px;
+  h2{
+    font-size: 20px;
+    
+  }
+  
+  .container-fluid{
+    background-color: $primary-color;
+    padding: 30px 20px 30px 20px;
+    .row{ 
+      gap: 30px;
+      .service-inner{
+        border-radius: 3px;
+      }
+
+      .service-inner2{
+       border-radius: 3px;
+      } 
+
+
+      .service-inner3{
+       border-radius: 3px;
+      } 
+
+      h3{
+        border-radius: 5px;
+      }
+    }
+  }
+  
+}
+
+//Our Team
+
+.Our-team{
+  
+  h2{
+    font-size: 20px;
+  
+  }
+
+  .container-fluid{
+
+    //height: 200px;
+    .row{
+        gap: 30px;
+      .team-inner{
+        background-image: url(img/catering\ team.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        //height: 105vh;
+        
+        height: 70vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 3px;
+      }
+
+      .team-inner1{
+         background-image: url(img/manager\ team.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        display: none;
+      }
+
+       .team-inner2{
+         background-image: url(img/media.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 265px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        display: none;
+      }
+
+       .team-inner3{
+         background-image: url(img/researcg\ team.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 265px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        display: none;
+      }
+
+       h3{
+        background-color: #f7f7f7a2;
+        color: $secondary-color;
+        font-size: 20px;
+        text-align: center;
+        
+      }
+    }
+  }
+}
+
+//Partnered products
+ .Partnered-products{
+  margin-top: 30px;
+  h2{
+    font-size: 20px;
+    color: $secondary-color;
+    margin-bottom: 30px;
+  }
+
+  .container-fluid{
+     padding: 0px;
+    .card-inner, .card-inner2, .card-inner3,.card-inner4{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      
+      
+      .card-body{
+         padding-left: 20px;
+        color: $secondary-color;
+      }
+      a{
+        text-decoration: none;
+        color: $secondary-color;
+      }
+    }
+   
+    .row{
+      gap: 40px;
+   
+      //padding: 0px;
+    }
+    background-color: $primary-color;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+//  Testimonials
+
+ .testimonials{
+ 
+  h2{
+    font-size: 20px;
+
+  }
+
+  .container-fluid{
+    background-image: url(img/coff.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    //opacity: 0.3;
+    //z-index: 1;
+    
+
+    .testimony-icons{
+       border-top: #3a3a3aa2 solid;
+       
+      }
+
+       p{
+       
+        font-size: 18px;
+      }
+
+
+
+    .inner-testimony2{
+      //margin: 18% 10% 18% 10%;
+      padding: 10% 10% 10% 10%;
+      background-color: #f7f7f760;
+       width: 100%;
+       height: 100%;
+      
+
+    }
+
+    .inner-testimony4, .inner-testimony6, .inner-testimony7, .inner-testimony9{
+      padding: 20px 10px 20px 10px;
+      background-color: #edc588bd;
+      height: 100%;
+      
+     
+    }
+
+    .inner-testimony3, .inner-testimony4, .inner-testimony5, .inner-testimony6, .inner-testimony7,
+     .inner-testimony8, .inner-testimony9, .inner-testimony10{
+      display: none;
+      
+     
+    }
+
+    .inner-testimony3, .inner-testimony5, .inner-testimony8, .inner-testimony10{
+      img{
+        width: 100%;
+      }
+    }
+  }
+}
+
+//footer
+
+footer{
+  margin-top: 80px;
+  
+ background: linear-gradient(rgba(129, 58, 26, 0.6), rgba(129, 58, 26, 0.7)), url("img/phone\ footer\ img.jpg");
+ background-position: center;
+ background-size: cover;
+ background-repeat: no-repeat;
+  
+  padding-left: 20px;
+  padding-right: 20px;
+ 
+ .inner-footer{
+  
+   padding-top: 20px;
+   padding-left: 20px;
+   
+ }
+
+ .inner-footer2{
+    padding-top: 20px;
+    padding-left: 20px;
+     text-align: center;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+   h3{
+    color: $primary-color;
+   }
+
+   p{
+    color: $primary-color;
+    font-size: 20px;
+    padding-bottom: 60px;
+   }
+
+   .Subscribe-text{
+      height: 40px;
+      width: 100%;
+      display: flex;
+      padding-left: 20px;
+
+      p{
+        color: #813A1A;
+      }
+      button{
+      //margin-left: 110px;
+      margin-left: auto;
+      margin-top: 5px;
+      margin-right: 10px;
+    }
+    }
+
+   
+ }
+
+ .inner-footer3{
+    padding-top: 20px;
+    padding-left: 20px;
+     text-align: center;
+    h3{
+      color: $primary-color;
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    ul{
+
+      li{
+        list-style: none;
+        padding-bottom: 10px;
+        font-size: 20px;
+        a{
+          color: $primary-color;
+          text-decoration: none;
+        }
+      }
+    }
+ }
+
+ .inner-footer4{
+   padding-top: 20px;
+    padding-left: 20px;
+    
+    
+    h3{
+      color: $primary-color;
+      text-align: center;
+      padding-bottom: 40px;
+      display: none;
+      
+    }
+
+    .footer-icons{
+      
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-wrap: nowrap ;
+       gap: 30px;
+       width: 100%;
+       margin-left: 0px;
+       padding-bottom: 80px;
+    }
+ }
+
+ 
+}
+ 
+}
+
+
